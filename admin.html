@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <title>Admin | Fast Food Fast</title>
+</head>
+<body>
+    
+        <header>
+            <img class="logo" src="img/fast-logo.svg" alt="">
+            <div class="nav">
+                <div class="nav-button">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+                <div class="nav-list">                
+                    <ul>
+                        <li><a href="user-login.html">Logout</a></li>
+                        <li><a href="index.html">Place Order</a></li>
+                        <li><a href="admin.html">Admin</a></li>
+                        <li><a href="user-history.html">User History</a></li>
+                        
+                    </ul>
+                </div>
+            </div>                        
+        </header>
+    <div class="viewport">
+        <div class="main">
+            <div class="heading flex">                    
+                <h4>Welcome <span id="admin"></span>.</h4>
+                <a href="admin-add.html"><button class="add order-button">Add Food Item</button></a>
+            </div>
+            <div class="container">
+
+                <div id="admin-error">
+                    <p>Server Timeout. Please Login Again to view this page</p>
+                </div>
+                <div class="table">
+                    
+                    <h3>Incoming Orders</h3>
+                        <table id="all-orders-table">
+                            <!-- Order list Appears Here -->
+                        </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <p><small>&copy; 2018 Fastfood Fast, Inc.</small></p>
+    </footer>
+
+<script src="js/common.js"></script>
+<script src="js/admin.js"></script>
+    
+</body>
+</html>

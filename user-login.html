@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <title>Login | Fast Food Fast</title>
+</head>
+<body>
+        <header>
+            <img class="logo" src="img/fast-logo.svg" alt="">
+            <div class="nav">
+                <div class="nav-button">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+                <div class="nav-list">                
+                    <ul>
+                        <li><a href="user-login.html">Login</a></li>
+                        <li><a href="index.html">View Menu</a></li>                       
+                        
+                        
+
+
+                    </ul>
+                </div>
+            </div>                        
+        </header>
+    <div class="viewport">    
+        <div class="main">
+            <div class="heading">
+                <h3>Please Login or Sign Up</h3>
+            </div>
+
+            <div class="container">
+                <!-- Tablinks -->
+                <div class="tab">
+                    <button class="tablinks active" onclick="openTab(event, 'loginForm')">Login</button>
+                    <button class="tablinks" onclick="openTab(event, 'signUpForm')">Sign Up</button>
+                    
+                </div>
+            <!-- Tab Content  -->
+                <form id="loginForm" class="tabcontent">
+
+                    <div id="login-success">
+                        <p>Login Successful.</p>
+                    </div>
+
+                    <div id="login-fail">
+                        <p>Invalid username or password.</p>
+                    </div>
+                                    
+                    <label class="form-label" for="">Username:</label><br>
+                    <input class="form-input" type="text" name="username"><br>
+                    <label class="form-label" for="">Password:</label><br>
+                    <input class="form-input" type="password" name="password"><br>
+                    <input class="form-submit" type="submit">
+
+                </form>
+
+                <form id="signUpForm" class="tabcontent">
+                    <div id="signUp-fail">
+                        <p>Passwords Do not match.</p>
+                    </div>
+                    <div id="signUp-success">
+                        <p>You Signed Up successfully. Please Login to continue.</p>
+                    </div>
+                    <div id="signUp-empty">
+                        <p>All Fields are required.</p>
+                    </div>
+                    <div id="signUp-duplicate">
+                        <p>A user with those credentials already exists. Please Try again.</p>
+                    </div>
+                    <label class="form-label" for="">Username:</label><br>
+                    <input class="form-input" type="text" name="username"><br>
+                    <label class="form-label" for="">Email:</label><br>
+                    <input class="form-input" type="text" name="email"><br>
+                    <label class="form-label" for="">Password:</label><br>
+                    <input class="form-input" type="password" name="password"><br>
+                    <label class="form-label" for="">Repeat Password:</label><br>
+                    <input class="form-input" type="password" name=confirm-password><br>
+                    <input class="form-submit" type="submit">
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <p><small>&copy; 2018 Fastfood Fast, Inc.</small></p>
+    </footer>
+<script src="js/common.js"></script>
+<script src="js/login.js"></script>
+</body>
+</html>

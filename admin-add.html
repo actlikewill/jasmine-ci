@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <title>Admin | Fast Food Fast</title>
+</head>
+<body>
+    
+        <header>
+            <img class="logo" src="img/fast-logo.svg" alt="">
+            <div class="nav">
+                <div class="nav-button">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+                <div class="nav-list">                
+                    <ul>
+                        <li><a href="user-login.html">Logout</a></li>
+                        <li><a href="index.html">Place Order</a></li>
+                        <li><a href="admin.html">Admin</a></li>
+                        <li><a href="user-history.html">User History</a></li>
+                        
+                    </ul>
+                </div>
+            </div>                       
+        </header>
+    <div class="viewport">
+        <div class="main">
+
+            <div class="heading">
+                <h4>Welcome <span id="admin-name"></span>.</h4>
+            </div>
+            <div class="container">
+
+                        <div id="add-success">
+                            <p>Menu Item Successfully Added.</p>
+                        </div>
+
+                        <div id="add-fail">
+                            <p>An Error occured. Please Try Again.</p>
+                        </div>
+                    <form id="add-item-form" class="add-form" action="orders.html">  
+                                    
+                        <label class="form-label" for=""><strong>Add Item Name:</strong></label><br>
+                        <small>Keep it Short:</small>
+                        <input class="form-input" type="text" name="menu_item"><br>
+                        <label class="form-label" for=""><strong>Add Item Description:</strong></label><br>
+                        <small>Make it interesting and brief:</small>
+                        <input class="form-input" type="text" name="description"><br>
+                        <label class="form-label" for=""><strong>Add Item Price:</strong></label><br>
+                        <small>The price is in Ksh:</small>
+                        <input class="form-input" type="text" name="price"><br>
+                        <label class="form-label" for=""><strong>Add Item Image:</strong></label><br>
+                        <small>Add an image to be displayed in the menu:</small>
+                        <input class="form-input" id="file-upload" type="file"><br>
+                        <input class="form-submit" type="submit">
+                    </form>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <p><small>&copy; 2018 Fastfood Fast, Inc.</small></p>
+    </footer>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/admin-add.js"></script>
+    
+</body>
+</html>

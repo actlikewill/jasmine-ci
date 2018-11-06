@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <title>Admin | Fast Food Fast</title>
+</head>
+<body>
+        <header>
+            <img class="logo" src="img/fast-logo.svg" alt="">
+            <div class="nav">
+                <div class="nav-button">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+                <div class="nav-list">                
+                    <ul>
+                        <li><a href="user-login.html">LogOut</a></li>
+                        <li><a href="index.html">Place Order</a></li>                        
+                       
+                    </ul>
+                </div>
+            </div>                        
+        </header>
+    <div class="viewport">
+        <div class="main">
+            <div class="heading">
+                <h4>Welcome <span id="user"></span>.</h4>
+            </div>
+            <div class="container">
+                <div id="history-error">
+                    <p>Server Timeout. Please Login Again to view this page</p>
+                </div>
+                <div class="table">
+                    
+                    <h3>User History</h3>
+                    <p><small>This is your history of orders.</small></p>
+                        <table id="history-table">
+                            <!-- Data goes here -->
+                        </table>
+                </div>
+            </div>
+    </div>
+    </div>
+    <footer class="footer">
+        <p><small>&copy; 2018 Fastfood Fast, Inc.</small></p>
+    </footer>
+<script src="js/common.js"></script>
+<script src="js/users.js"></script>
+    
+</body>
+</html>

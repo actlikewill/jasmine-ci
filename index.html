@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <title>Home | Fast Food Fast</title>
+</head>
+<body>
+    
+    <header>
+        <img class="logo" src="img/fast-logo.svg" alt="">
+        <div class="nav">
+            <div class="nav-button">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <div class="nav-list">                
+                <ul>
+                    <li><a href="user-login.html">Logout</a></li>
+                    <li><a href="index.html">Place Order</a></li>
+                    <li id="admin-link"><a href="admin.html">Admin</a></li>
+                    <li><a href="user-history.html">User History</a></li>
+                    
+                </ul>
+            </div>
+        </div>         
+                    
+    </header>
+    <div class="viewport">
+        <div class="main">
+            <div class="heading">
+                <h4 class="welcome">Hi <span id="username"></span>.</h4>
+                <h3>Click on an item to add to your order</h3>
+            </div>
+            <div class="row">
+                <div id="my-menu" class="menu">
+                    <!-- Menu items appear here -->
+                </div>
+                <div class="order">
+                    <div class="order-heading">
+                        <h4>Your Order</h4>
+                        <small id="clear">Clear Order</small>
+                    </div>
+                    <div id="order-list">
+                        
+                    </div>
+                    <div class="spacer">
+                        
+                    </div>
+
+                    <div id="place-order-button" class="place-order-button" onclick="getOrder()">                
+                        <button type="submit" class="button">Place Order</button>
+                    </div>                
+                </div>                
+            </div>
+            <div class="modal" id="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <h2>Order Summary</h2><br>
+
+                        <div id="order-summary">
+
+                        </div>
+
+                        <div id="confirm-order">
+                            <button class="complete order-button">Confirm Order</button>
+                        </div>
+                        <div id="success-message">
+                            <p>You Order Was Placed Successfully</p>
+                            <button id="back" onclick="reloadPage()" class="back order-button">Go Back</button>
+                        </div>
+                        <div id="fail-message">
+                            <p>There was a problem. Please Login to place your order.</p>
+                            <button id="back2" onclick="reloadPage()" class="back order-button">Go Back</button>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>  
+    <footer class="footer">
+        <p><small>&copy; 2018 Fastfood Fast, Inc.</small></p>
+    </footer>
+
+<!-- <script src="js/script.js"></script> -->
+<script src="js/common.js"></script>
+<script src="js/menu.js"></script>
+    
+</body>
+</html>
